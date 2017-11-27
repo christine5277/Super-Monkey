@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<title>IKitchen</title>
+
+<body>
+
+<style>
+.navigation-bar {
+    width: 100%;  /* i'm assuming full width */
+    height: 50px; /* change it to desired width */
+    background-color: #E59866; /* change to desired color */
+}
+.logo {
+    display: inline-block;
+    vertical-align: top;
+    width: 50px;
+    height: 30px;
+    left: 20%;
+    position: relative;
+    margin-right: 20px;
+    margin-top: 10px;    /* if you want it vertically middle of the navbar. */
+}
+.navigation-bar > a {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 50px;
+    text-align: center;
+    text-decoration: none;
+    font-weight:bold;
+    font-family:Cooper Black;
+    font-size:20px;
+    color: white;
+    left: 27%;
+    position: relative;
+    height: 50px;        /* if you want it to take the full height of the bar */
+    line-height: 50px;    /* if you want it vertically middle of the navbar */
+}
+
+.navigation-bar a:hover {
+  color:black;
+  background-color: #ddd;
+  width:180px;
+}
+
+.navigation-bar a:active{
+  backgroud-color:none;
+}
+</style>
+
+<nav class="navigation-bar">
+    <img class="logo" src="logo.png">
+    <a onclick="Click('file:///F:/Coding%20course/IKitchen/main%20page.html#')" href="#">Home</a>
+    <a onclick="Click('file:///F:/Coding%20course/IKitchen/main%20page.html#')" href="#">Kitchen's Story</a>
+    <a onclick="Click('file:///F:/Coding%20course/IKitchen/main%20page.html#')" href="#">Polling Station</a>
+</nav>
+
+<script>
+function Click(url) {
+  window.location = url;
+}
+</script>
+
+<br/><br/><br/>
+
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <style>
+      * {box-sizing:border-box}
+      body {font-family: Verdana,sans-serif;margin:0}
+      .mySlides {display:none}
+      .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 15%;
+      right: 0;
+      height: 500px;
+      width: 700px;
+      opacity: 0;
+      transition: .5s ease;
+      background-color: white;
+      }
+      .slideshow-container:hover .overlay {
+      opacity: 0.5;
+      }
+      .overlaytext {
+      color: black;
+      font-size: 20px;
+      position: absolute;
+      text-align: center;
+      width:80%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      }
+      .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+      }
+      .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: grey;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      }
+      .next {
+      right: 8%;
+      border-radius: 3px 0 0 3px;
+      }
+      .prev {
+      left: 8%;
+      }
+      .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+      }
+      .numbertext {
+      color: grey;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+      left: 8%;
+      }
+      .dot {
+      cursor: pointer;
+      height: 12px;
+      width: 12px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+      }
+      .active, .dot:hover {
+      background-color: #717171;
+      }
+      .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+      }
+      @-webkit-keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+      }
+      @keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+      }
+      @media only screen and (max-width: 300px) {
+      .prev, .next,.text {font-size: 11px}
+      }
+      .image {
+  opacity: 0.5;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.slideshow-container:hover .middle {
+  opacity: 1;
+}
+
+.middletext {
+  background-color: black;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 24px 48px;
+}
+   </style>
+</head>
+<body>
+   <div class="slideshow-container">
+      <div class="mySlides fade">
+         <div class="numbertext">1 / 3</div>
+         <center><img src="food flag.jpeg" style="width:700px;height:500px"></cnter>
+
+         <div onclick="overlayClick('http://www.google.co.uk')" class="overlay">
+            <div class="overlaytext">
+            <h1>Our Value</h1>
+            <p>is to gather different nationalities by sharing kitchens.</p>
+            </div>
+         </div>
+      </div>
+
+      <div class="mySlides fade">
+         <div class="numbertext">2 / 3</div>
+        <center><img src="kitchen story.jpg" style="width:700px;height:500px"></center>
+
+         <div onclick="overlayClick('http://www.google.co.uk')" class="overlay">
+            <div class="overlaytext">
+              <h1>Our "chef"</h1>
+              <p>"We travel miles from every corner of the world.</p>
+              <p>But here in Leeds, we find home."</p>
+            </div>
+         </div>
+      </div>
+
+      <div class="mySlides fade">
+         <div class="numbertext">3 / 3</div>
+         <center><img src="voting1.png" style="width:700px;height:500px"></center>
+        <div class="overlay">
+         <div onclick="overlayClick('http://www.google.co.uk')" class="middle">
+           <div class="middletext">Vote now!</div>
+  </div>
+   </div>
+      </div>
+
+         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+         <a class="next" onclick="plusSlides(1)">&#10095;</a>
+   </div>
+   <br>
+   <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+   </div>
+   <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function overlayClick(url) {
+        window.location = url;
+    }
+
+      function plusSlides(n) {
+       showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+       showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+       var i;
+       var slides = document.getElementsByClassName("mySlides");
+       var dots = document.getElementsByClassName("dot");
+       if (n > slides.length) {slideIndex = 1}
+       if (n < 1) {slideIndex = slides.length}
+       for (i = 0; i < slides.length; i++) {
+           slides[i].style.display = "none";
+       }
+       for (i = 0; i < dots.length; i++) {
+           dots[i].className = dots[i].className.replace(" active", "");
+       }
+       slides[slideIndex-1].style.display = "block";
+       dots[slideIndex-1].className += " active";
+      }
+   </script>
+ </body>
+
+<br/><br/></br><br/>
+<style>
+.city {
+    color: #E59866;
+    font-family:Cooper Black;
+    font-size:40px;
+    padding: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<center><h2 class="city">What's on?</h2></center>
+
+<div style="width:1350px; background-color:white; height:600px; overflow:auto;">
+		  <div style="width:1350px; height: 90px;">
+			<center><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" onclick="imageClick('http://www.google.co.uk')" src="event1.PNG" width=300px height=500px alt="bbc news special" />
+			<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" onclick="imageClick('http://www.google.co.uk')" src="event2.PNG" width=300px height=500px alt="bbc news special" />
+			<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" onclick="imageClick('http://www.google.co.uk')" src="event3.PNG" width=300px height=500px alt="bbc news special" />
+			<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" onclick="imageClick('http://www.google.co.uk')" src="event4.PNG" width=300px height=500px alt="bbc news special" /></center>
+		</div>
+	</div>
+
+  <script>
+
+  function imageClick(url) {
+    window.location = url;
+}
+
+  function bigImg(x) {
+      x.style.height = "550px";
+      x.style.width = "330px";
+  }
+
+  function normalImg(x) {
+      x.style.height = "500px";
+      x.style.width = "300px";
+  }
+  </script>
+
+<center><p style="font-size:5px">Hikitchen</p>
+<p style="font-size:5px">© 2017-2018 Hikitchen.com. All Rights Reserved.</p></center>
+
+</body>
+</html>
