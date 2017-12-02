@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<title>iKitchen</title>
+
+<div>
+  <center><h1>iKitchen</h1></center>
+</div>
+
+
+  <center>
+<p1 style=
+      "font-size:25px;
+      font-family:Bradley hand;
+              color:grey">
+    Ever since the iKitchen started,<br/>
+    our goal has been to be bonding the internation students in leeds cociety.<br/>
+    iKitchen engaging with the host students in leeds to gather different nationalities by share kitchen.<br/>
+</p1>
+
+<p2 style=
+        "font-size:25px;
+        font-family:Bradley hand;
+        color:tomato">
+    Full of home flavor, full of smile, and full of love.
+
+      </center>
+      <br/><br/>
+</p2>
+
+<p3>
+    <center>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+  .mySlides {display:none;}
+  </style>
+  <body>
+
+  <div style="max-width:500px">
+    <img class="mySlides" src="banner1.jpeg" style="width:100%">
+    <img class="mySlides" src="banner2.jpeg" style="width:100%">
+    <img class="mySlides" src="banner3.jpeg" style="width:100%">
+  </div>
+
+  <script>
+  var myIndex = 0;
+  carousel();
+
+  function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}
+      x[myIndex-1].style.display = "block";
+      setTimeout(carousel, 2000); // Change image every 2 seconds
+  }
+  </script>
+    </center>
+  </body>
+  <br/><br/>
+</p3>
+
+  <center>
+
+<p4 style=
+       "font-size:25px;
+       font-family:Bradley hand;
+       color:grey">
+       To Be The Next Host!
+       <br/>
+
+
+      <form action="/action_page.php">
+        First name:<br>
+        <input type="text" name="firstname" value="Michelle">
+        <br>
+        Last name:<br>
+        <input type="text" name="lastname" value="Obama">
+        <br>
+        Email:<br>
+        <input type="text" name="EmailID" value="M.Obama@whitehouse.com">
+        <br><br>
+        <input type="submit" value="Submit">
+      </form>
+
+  </center>
+</p4>
+
+<br/><br/><br/>
+
+  <center>
+<p5 style=
+          "font-size:30px;
+          font-family:Cooper Black;
+          color:#E59866">
+      Our Kitchen Stories
+
+    </center>
+
+    +<div style="width:1350px; background-color:white; height:600px; overflow:auto;">
+    		  <div style="width:1350px; height: 90px;">
+    			<center><img onmouseover="bigImg(this)" onmouseout="normalImg(this)"  src="story1.png" width=300px height=500px  />
+    			<img onmouseover="bigImg(this)" onmouseout="normalImg(this)"  src="story2.png" width=300px height=500px />
+    			<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="story3.png" width=300px height=500px  />
+    			<img onmouseover="bigImg(this)" onmouseout="normalImg(this)"  src="story4.png" width=300px height=500px /></center>
+    		</div>
+    	</div>
+
+      <script>
+
+      function imageClick(url) {
+        window.location = url;
+    }
+
+      function bigImg(x) {
+          x.style.height = "550px";
+          x.style.width = "330px";
+      }
+
+      function normalImg(x) {
+          x.style.height = "500px";
+          x.style.width = "300px";
+      }
+      </script>
+      </body>
+</p5>
+</p>
+</html>
