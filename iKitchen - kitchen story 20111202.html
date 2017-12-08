@@ -1,7 +1,63 @@
 <!DOCTYPE html>
 <html>
 <title>iKitchen</title>
-
+<head>
+ <link rel="shortcut icon" type="image/x-icon" href="iKitchen-transparent.png" />
+</head>
+ <style>
+      p{
+      text-align: center;
+      background: url("iKitchen.png");
+      background-size: cover;
+      background-position:center;
+      background-repeat: repeat-n;
+      color: white;
+      font-family: helvetica;
+    }
+.navigation-bar {
+    width: 100%;  /* i'm assuming full width */
+    height: 50px; /* change it to desired width */
+    background-color: #E59866; /* change to desired color */
+}
+.logo {
+    display: inline-block;
+    vertical-align: top;
+    width: 50px;
+    height: 50px;
+    position: center;
+    /* if you want it vertically middle of the navbar. */
+}
+.navigation-bar > a {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 50px;
+    text-align: center;
+    text-decoration: none;
+    font-weight:bold;
+    font-family:Cooper Black;
+    font-size:20px;
+    color: white;
+    left: 27%;
+    position: relative;
+    height: 50px;        /* if you want it to take the full height of the bar */
+    line-height: 50px;    /* if you want it vertically middle of the navbar */
+}
+.navigation-bar a:hover {
+  color:black;
+  background-color: #ddd;
+  width:180px;
+}
+.navigation-bar a:active{
+  backgroud-color:none;
+}
+</style>
+<body>
+<nav class="navigation-bar">
+    <img class="logo" src="iKitchen-transparent.png">
+    <a onclick="Click('file:///F:/Coding%20course/IKitchen/main%20page.html#')" href="main page.html">Home</a>
+    <a onclick="Click('file:///F:/Coding%20course/IKitchen/main%20page.html#')" href="iKitchen - kitchen story 20111202.html">Kitchen's Story</a>
+    <a onclick="Click('file:///F:/Coding%20course/IKitchen/main%20page.html#')" href="pollingstation.html">Polling Station</a>
+</nav>
 <div>
   <center><h1>iKitchen</h1></center>
 </div>
